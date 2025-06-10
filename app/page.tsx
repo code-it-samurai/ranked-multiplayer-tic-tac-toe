@@ -112,6 +112,8 @@ export default function Home() {
     <main style={{ 
       backgroundColor: 'black',
       minHeight: '100vh',
+      width: '100vw',
+      overflowX: 'hidden',
       display: 'flex',
       flexDirection: 'column',
       justifyContent: 'center',
@@ -124,14 +126,17 @@ export default function Home() {
           color: 'white',
           padding: '1rem',
           textAlign: 'center',
-          width: '100%',
+          width: '50%',
           position: 'absolute',
-          top: 0,
-          left: 0,
+          top: '1rem',
+          left: '50%',
+          transform: 'translateX(-50%)',
           zIndex: 1000,
           display: 'flex',
           justifyContent: 'space-between',
-          alignItems: 'center'
+          alignItems: 'center',
+          borderRadius: '0.5rem',
+          boxSizing: 'border-box'
         }}>
           <span>{notification.message}</span>
           <button 
@@ -153,8 +158,7 @@ export default function Home() {
           backgroundColor: 'rgb(245, 245, 245)',
           padding: '2rem',
           borderRadius: '1rem',
-          width: '400px',
-          height: '400px',
+          width: '80vw',
           aspectRatio: '1 / 1',
           display: 'grid',
           gridTemplateColumns: 'repeat(3, 1fr)',
