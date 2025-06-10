@@ -159,6 +159,8 @@ export default function Home() {
           padding: '2rem',
           borderRadius: '1rem',
           width: '80vw',
+          maxWidth: '400px',
+          maxHeight: '400px',
           aspectRatio: '1 / 1',
           display: 'grid',
           gridTemplateColumns: 'repeat(3, 1fr)',
