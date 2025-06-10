@@ -52,7 +52,7 @@ function gameReducer(state: typeof initialGameState, action: { type: string; pay
 
       let notificationMessage = null;
       if (newWinner) {
-        notificationMessage = `${newWinner} wins!`;
+        notificationMessage = `${newWinner} won`;
       } else if (newIsDraw) {
         notificationMessage = 'It\'s a draw!';
       }
@@ -122,9 +122,9 @@ export default function Home() {
     }}>
       {notification.visible && notification.message && (
         <div style={{
-          backgroundColor: '#4CAF50',
-          color: 'white',
-          padding: '1rem',
+          backgroundColor: 'white',
+          color: '#333',
+          padding: '1rem 1rem 1rem 2rem',
           textAlign: 'center',
           width: '50%',
           position: 'absolute',
@@ -136,26 +136,27 @@ export default function Home() {
           justifyContent: 'space-between',
           alignItems: 'center',
           borderRadius: '0.5rem',
-          boxSizing: 'border-box'
+          boxSizing: 'border-box',
+          fontFamily: 'Roboto, sans-serif'
         }}>
-          <span>{notification.message}</span>
+          <span style={{ fontSize: '1.1rem' }}>{notification.message}</span>
           <button 
             onClick={handleDismissNotification}
             style={{
               backgroundColor: 'transparent',
-              color: 'white',
+              color: '#333',
               border: 'none',
               fontSize: '1.2rem',
               cursor: 'pointer'
             }}
           >
-            &times;
+            <img src="/images/closebutton.png" alt="Close" style={{ width: '2.5rem', height: '2.5rem' }} />
           </button>
         </div>
       )}
       <div 
         style={{
-          backgroundColor: 'rgb(245, 245, 245)',
+          backgroundColor: '#36454F',
           padding: '2rem',
           borderRadius: '1rem',
           width: '80vw',
