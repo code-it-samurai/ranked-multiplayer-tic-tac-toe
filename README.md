@@ -1,6 +1,7 @@
 # Ranked Multiplayer Tic-Tac-Toe
 
 A modern, interactive Tic-Tac-Toe game built with Next.js and TypeScript. This project features a clean, minimalist design with smooth animations and responsive gameplay.
+(in future ranked tic tac toe will have a bot for players to play with, and room system if they wanna play with friends)
 
 ## Play Online
 
@@ -34,12 +35,14 @@ You can play the game directly in your browser at [https://tictactoe.pratftw.com
 ### Installation
 
 1. Clone the repository:
+
 ```bash
 git clone https://github.com/yourusername/ranked-multiplayer-tic-tac-toe.git
 cd ranked-multiplayer-tic-tac-toe
 ```
 
 2. Install dependencies:
+
 ```bash
 npm install
 # or
@@ -47,6 +50,7 @@ yarn install
 ```
 
 3. Run the development server:
+
 ```bash
 npm run dev
 # or
@@ -82,4 +86,5 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details. 
+This project is licensed under the MIT License - see the LICENSE file for details.
+
